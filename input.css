@@ -57,6 +57,10 @@
     .menu-collapse{
         @apply text-sm grid gap-5 ml-10 pl-[2px] min-w-[115px];
     }
+
+    .menu-list-active{
+        @apply text-white bg-primaryColor;
+    }
     
 
 }
