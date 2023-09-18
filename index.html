@@ -106,6 +106,7 @@
           
       </div>
 
+      <!-- Overview -->
       <div class="flex flex-wrap gap-10 p-5 xl:p-10">
         
         <div class="shadow rounded-md w-72 p-5">
@@ -180,6 +181,7 @@
 
       </div>
       
+      <!-- New Orders -->
       <div class="p-5 xl:px-10 mt-5">
 
         <div class="flex justify-between items-center flex-wrap gap-5">
@@ -234,15 +236,158 @@
                   <td VALIGN=TOP>Kazla ,Rajshahi</td>
                   <td VALIGN=TOP>$15,302.00</td>
                   <td VALIGN=TOP>$767.50</td>
-                  <td VALIGN=TOP><div class="flex justify-center items-center gap-5 border w-fit px-5 py-2 scale-75 -ml-4 -mt-2">
-                    <button><i class="fa-solid fa-eye text-primaryColor"></i></button>
+                  <td VALIGN=TOP><div class="flex justify-center items-center gap-3 border w-fit px-3 py-1 -mt-[6px]">
+                    <div>
+                      <button class="table-button"><i class="fa-solid fa-eye text-primaryColor text-xs"></i></button>
+                      <!-- Pop up Details -->
+                      <div class="table-collapse bg-black/30 fixed top-0 right-0 h-full w-full flex justify-center items-center z-10 hidden">
+
+                        <div class="bg-gray-100 overflow-auto max-h-full border-2 border-primaryColor rounded-lg w-full max-w-[550px] p-5">
+                        
+                          <div class="flex justify-between items-center">
+                            <p class="font-semibold">Order Details</p>
+                            <button class="table-close bg-primaryColor text-white text-sm rounded-[50%] px-[8px] py-[4px]">
+                              <i class="fa-solid fa-xmark"></i>
+                            </button>
+                          </div>
+
+                          <div class="overflow-x-scroll md:overflow-hidden mt-5">
+                            <table class="table-auto text-xs md:text-sm profile-table w-[130%] md:w-full">
+                              <thead>
+                                <tr>
+                                  <th>Proudct Names</th>
+                                  <th>Unit Price</th>
+                                  <th>Quantity</th>
+                                  <th></th>
+                                  <th>Total Price</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+
+                                <tr class="bg-white rounded-md">
+                                  <td><div class="flex items-center gap-2 pl-2">
+                                    <img src="img/Product-4.png" alt="" class="h-10 w-10">
+                                    <div>
+                                      <p class="font-semibold w-40 text-ellipsis line-clamp-2">Smart Water Bootle</p>
+                                    </div>
+                                  </div></td>
+                                  <td>$150</td>
+                                  <td>x2</td>
+                                  <td></td>
+                                  <td>$300</td>
+                                </tr>
+
+                                <tr class="bg-white rounded-md">
+                                  <td><div class="flex items-center gap-2 pl-2">
+                                    <img src="img/Product-1.png" alt="" class="h-10 w-10">
+                                    <div>
+                                      <p class="font-semibold w-40 text-ellipsis line-clamp-2">Apple Watch Series 3</p>
+                                    </div>
+                                  </div></td>
+                                  <td>$150</td>
+                                  <td>x2</td>
+                                  <td></td>
+                                  <td>$300</td>
+                                </tr>
+
+                                <tr class="bg-white rounded-md">
+                                  <td><div class="flex items-center gap-2 pl-2">
+                                    <img src="img/Product-2.png" alt="" class="h-10 w-10">
+                                    <div>
+                                      <p class="font-semibold w-40 text-ellipsis line-clamp-2">Zoom Lens Camera </p>
+                                    </div>
+                                  </div></td>
+                                  <td>$150</td>
+                                  <td>x2</td>
+                                  <td></td>
+                                  <td>$300</td>
+                                </tr>
+
+                                <tr class="bg-white rounded-md">
+                                  <td><div class="flex items-center gap-2 pl-2">
+                                    <img src="img/Product-3.png" alt="" class="h-10 w-10">
+                                    <div>
+                                      <p class="font-semibold w-40 text-ellipsis line-clamp-2">Rayban Sunglass</p>
+                                    </div>
+                                  </div></td>
+                                  <td>$150</td>
+                                  <td>x2</td>
+                                  <td><p class="text-red-600 bg-red-100 w-fit px-2 py-1 rounded font-semibold">Stock Out</p></td>
+                                  <td></td>
+                                </tr>
+
+                              </tbody>
+                            </table>
+                          </div>
+
+                          <div class="bg-primaryColor text-white flex justify-between items-center rounded-md px-5 py-3 mt-3">
+                            <p>Total</p>
+                            <p>$900</p>
+                          </div>
+
+                          <p class="font-semibold mt-5">Order Timeline</p>
+
+                          <div class="overflow-x-scroll md:overflow-hidden">
+                            <table class="table-auto text-xs md:text-sm profile-table w-[100%] md:w-full mt-3">
+                              <thead>
+                                <tr>
+                                  <th>Order ID</th>
+                                  <th>Order Date</th>
+                                  <th>Delivery Date</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+
+                                <tr class="bg-white rounded-md">
+                                  <td><div class="pl-2">9256821912-FE</div></td>
+                                  <td>12 April 2023</td>
+                                  <td>16 April 2023</td>
+                                </tr>
+
+                              </tbody>
+                            </table>
+                          </div>
+
+                          <p class="font-semibold mt-5">Delivery Details</p>
+
+                          <div class="overflow-x-scroll md:overflow-hidden">
+                            <table class="table-auto text-xs md:text-sm profile-table w-[100%] md:w-full mt-3">
+                              <thead>
+                                <tr>
+                                  <th>Seller Name</th>
+                                  <th>Buyer Name</th>
+                                  <th>Delivery Location</th>
+                                  <th>Payment Method</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+
+                                <tr class="bg-white rounded-md">
+                                  <td><div class="pl-2">Md. Raju</div></td>
+                                  <td>Salim Khan</td>
+                                  <td>Kajla Rajshahi</td>
+                                  <td class="font-semibold text-primaryColor">Cash On Delivery</td>
+                                </tr>
+
+                              </tbody>
+                            </table>
+                          </div>
+
+                          <div class="flex gap-3 mt-5">
+                            <button class="primary-btn bg-green-500">Accept</button>
+                            <button class="primary-btn bg-red-500">Reject</button>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
                     <div class="w-[1px] h-[20px] bg-gray-300"></div>
-                    <button><i class="fa-solid fa-trash-can text-red-500"></i></button>
+                    <button><i class="fa-solid fa-trash-can text-red-500 text-xs"></i></button>
                   </div></td>
                 </tr>
 
                 <tr>
-                  <td>1.</td>
+                  <td>2.</td>
                   <td class="text-tColor">#27839-00</td>
                   <td>21 Sep, 2023</td>
                   <td><div class="flex items-center gap-2">
@@ -255,15 +400,158 @@
                   <td>Kazla ,Rajshahi</td>
                   <td>$15,302.00</td>
                   <td>$767.50</td>
-                  <td><div class="flex justify-center items-center gap-5 border w-fit px-5 py-2 scale-75 -ml-4">
-                    <button><i class="fa-solid fa-eye text-primaryColor"></i></button>
+                  <td><div class="flex justify-center items-center gap-3 border w-fit px-3 py-1 -mt-[6px]">
+                    <div>
+                      <button class="table-button"><i class="fa-solid fa-eye text-primaryColor text-xs"></i></button>
+                      <!-- Pop up Details -->
+                      <div class="table-collapse bg-black/30 fixed top-0 right-0 h-full w-full flex justify-center items-center z-10 hidden">
+
+                        <div class="bg-gray-100 overflow-auto max-h-full border-2 border-primaryColor rounded-lg w-full max-w-[550px] p-5">
+                        
+                          <div class="flex justify-between items-center">
+                            <p class="font-semibold">Order Details</p>
+                            <button class="table-close bg-primaryColor text-white text-sm rounded-[50%] px-[8px] py-[4px]">
+                              <i class="fa-solid fa-xmark"></i>
+                            </button>
+                          </div>
+
+                          <div class="overflow-x-scroll md:overflow-hidden mt-5">
+                            <table class="table-auto text-xs md:text-sm profile-table w-[130%] md:w-full">
+                              <thead>
+                                <tr>
+                                  <th>Proudct Names</th>
+                                  <th>Unit Price</th>
+                                  <th>Quantity</th>
+                                  <th></th>
+                                  <th>Total Price</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+
+                                <tr class="bg-white rounded-md">
+                                  <td><div class="flex items-center gap-2 pl-2">
+                                    <img src="img/Product-4.png" alt="" class="h-10 w-10">
+                                    <div>
+                                      <p class="font-semibold w-40 text-ellipsis line-clamp-2">Smart Water Bootle</p>
+                                    </div>
+                                  </div></td>
+                                  <td>$150</td>
+                                  <td>x2</td>
+                                  <td></td>
+                                  <td>$300</td>
+                                </tr>
+
+                                <tr class="bg-white rounded-md">
+                                  <td><div class="flex items-center gap-2 pl-2">
+                                    <img src="img/Product-1.png" alt="" class="h-10 w-10">
+                                    <div>
+                                      <p class="font-semibold w-40 text-ellipsis line-clamp-2">Apple Watch Series 3</p>
+                                    </div>
+                                  </div></td>
+                                  <td>$150</td>
+                                  <td>x2</td>
+                                  <td></td>
+                                  <td>$300</td>
+                                </tr>
+
+                                <tr class="bg-white rounded-md">
+                                  <td><div class="flex items-center gap-2 pl-2">
+                                    <img src="img/Product-2.png" alt="" class="h-10 w-10">
+                                    <div>
+                                      <p class="font-semibold w-40 text-ellipsis line-clamp-2">Zoom Lens Camera </p>
+                                    </div>
+                                  </div></td>
+                                  <td>$150</td>
+                                  <td>x2</td>
+                                  <td></td>
+                                  <td>$300</td>
+                                </tr>
+
+                                <tr class="bg-white rounded-md">
+                                  <td><div class="flex items-center gap-2 pl-2">
+                                    <img src="img/Product-3.png" alt="" class="h-10 w-10">
+                                    <div>
+                                      <p class="font-semibold w-40 text-ellipsis line-clamp-2">Rayban Sunglass</p>
+                                    </div>
+                                  </div></td>
+                                  <td>$150</td>
+                                  <td>x2</td>
+                                  <td><p class="text-red-600 bg-red-100 w-fit px-2 py-1 rounded font-semibold">Stock Out</p></td>
+                                  <td></td>
+                                </tr>
+
+                              </tbody>
+                            </table>
+                          </div>
+
+                          <div class="bg-primaryColor text-white flex justify-between items-center rounded-md px-5 py-3 mt-3">
+                            <p>Total</p>
+                            <p>$900</p>
+                          </div>
+
+                          <p class="font-semibold mt-5">Order Timeline</p>
+
+                          <div class="overflow-x-scroll md:overflow-hidden">
+                            <table class="table-auto text-xs md:text-sm profile-table w-[100%] md:w-full mt-3">
+                              <thead>
+                                <tr>
+                                  <th>Order ID</th>
+                                  <th>Order Date</th>
+                                  <th>Delivery Date</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+
+                                <tr class="bg-white rounded-md">
+                                  <td><div class="pl-2">9256821912-FE</div></td>
+                                  <td>12 April 2023</td>
+                                  <td>16 April 2023</td>
+                                </tr>
+
+                              </tbody>
+                            </table>
+                          </div>
+
+                          <p class="font-semibold mt-5">Delivery Details</p>
+
+                          <div class="overflow-x-scroll md:overflow-hidden">
+                            <table class="table-auto text-xs md:text-sm profile-table w-[100%] md:w-full mt-3">
+                              <thead>
+                                <tr>
+                                  <th>Seller Name</th>
+                                  <th>Buyer Name</th>
+                                  <th>Delivery Location</th>
+                                  <th>Payment Method</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+
+                                <tr class="bg-white rounded-md">
+                                  <td><div class="pl-2">Md. Raju</div></td>
+                                  <td>Salim Khan</td>
+                                  <td>Kajla Rajshahi</td>
+                                  <td class="font-semibold text-primaryColor">Cash On Delivery</td>
+                                </tr>
+
+                              </tbody>
+                            </table>
+                          </div>
+
+                          <div class="flex gap-3 mt-5">
+                            <button class="primary-btn bg-green-500">Accept</button>
+                            <button class="primary-btn bg-red-500">Reject</button>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
                     <div class="w-[1px] h-[20px] bg-gray-300"></div>
-                    <button><i class="fa-solid fa-trash-can text-red-500"></i></button>
+                    <button><i class="fa-solid fa-trash-can text-red-500 text-xs"></i></button>
                   </div></td>
                 </tr>
 
                 <tr>
-                  <td>1.</td>
+                  <td>3.</td>
                   <td class="text-tColor">#27839-00</td>
                   <td>21 Sep, 2023</td>
                   <td><div class="flex items-center gap-2">
@@ -276,10 +564,153 @@
                   <td>Kazla ,Rajshahi</td>
                   <td>$15,302.00</td>
                   <td>$767.50</td>
-                  <td><div class="flex justify-center items-center gap-5 border w-fit px-5 py-2 scale-75 -ml-4">
-                    <button><i class="fa-solid fa-eye text-primaryColor"></i></button>
+                  <td><div class="flex justify-center items-center gap-3 border w-fit px-3 py-1 -mt-[6px]">
+                    <div>
+                      <button class="table-button"><i class="fa-solid fa-eye text-primaryColor text-xs"></i></button>
+                      <!-- Pop up Details -->
+                      <div class="table-collapse bg-black/30 fixed top-0 right-0 h-full w-full flex justify-center items-center z-10 hidden">
+
+                        <div class="bg-gray-100 overflow-auto max-h-full border-2 border-primaryColor rounded-lg w-full max-w-[550px] p-5">
+                        
+                          <div class="flex justify-between items-center">
+                            <p class="font-semibold">Order Details</p>
+                            <button class="table-close bg-primaryColor text-white text-sm rounded-[50%] px-[8px] py-[4px]">
+                              <i class="fa-solid fa-xmark"></i>
+                            </button>
+                          </div>
+
+                          <div class="overflow-x-scroll md:overflow-hidden mt-5">
+                            <table class="table-auto text-xs md:text-sm profile-table w-[130%] md:w-full">
+                              <thead>
+                                <tr>
+                                  <th>Proudct Names</th>
+                                  <th>Unit Price</th>
+                                  <th>Quantity</th>
+                                  <th></th>
+                                  <th>Total Price</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+
+                                <tr class="bg-white rounded-md">
+                                  <td><div class="flex items-center gap-2 pl-2">
+                                    <img src="img/Product-4.png" alt="" class="h-10 w-10">
+                                    <div>
+                                      <p class="font-semibold w-40 text-ellipsis line-clamp-2">Smart Water Bootle</p>
+                                    </div>
+                                  </div></td>
+                                  <td>$150</td>
+                                  <td>x2</td>
+                                  <td></td>
+                                  <td>$300</td>
+                                </tr>
+
+                                <tr class="bg-white rounded-md">
+                                  <td><div class="flex items-center gap-2 pl-2">
+                                    <img src="img/Product-1.png" alt="" class="h-10 w-10">
+                                    <div>
+                                      <p class="font-semibold w-40 text-ellipsis line-clamp-2">Apple Watch Series 3</p>
+                                    </div>
+                                  </div></td>
+                                  <td>$150</td>
+                                  <td>x2</td>
+                                  <td></td>
+                                  <td>$300</td>
+                                </tr>
+
+                                <tr class="bg-white rounded-md">
+                                  <td><div class="flex items-center gap-2 pl-2">
+                                    <img src="img/Product-2.png" alt="" class="h-10 w-10">
+                                    <div>
+                                      <p class="font-semibold w-40 text-ellipsis line-clamp-2">Zoom Lens Camera </p>
+                                    </div>
+                                  </div></td>
+                                  <td>$150</td>
+                                  <td>x2</td>
+                                  <td></td>
+                                  <td>$300</td>
+                                </tr>
+
+                                <tr class="bg-white rounded-md">
+                                  <td><div class="flex items-center gap-2 pl-2">
+                                    <img src="img/Product-3.png" alt="" class="h-10 w-10">
+                                    <div>
+                                      <p class="font-semibold w-40 text-ellipsis line-clamp-2">Rayban Sunglass</p>
+                                    </div>
+                                  </div></td>
+                                  <td>$150</td>
+                                  <td>x2</td>
+                                  <td><p class="text-red-600 bg-red-100 w-fit px-2 py-1 rounded font-semibold">Stock Out</p></td>
+                                  <td></td>
+                                </tr>
+
+                              </tbody>
+                            </table>
+                          </div>
+
+                          <div class="bg-primaryColor text-white flex justify-between items-center rounded-md px-5 py-3 mt-3">
+                            <p>Total</p>
+                            <p>$900</p>
+                          </div>
+
+                          <p class="font-semibold mt-5">Order Timeline</p>
+
+                          <div class="overflow-x-scroll md:overflow-hidden">
+                            <table class="table-auto text-xs md:text-sm profile-table w-[100%] md:w-full mt-3">
+                              <thead>
+                                <tr>
+                                  <th>Order ID</th>
+                                  <th>Order Date</th>
+                                  <th>Delivery Date</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+
+                                <tr class="bg-white rounded-md">
+                                  <td><div class="pl-2">9256821912-FE</div></td>
+                                  <td>12 April 2023</td>
+                                  <td>16 April 2023</td>
+                                </tr>
+
+                              </tbody>
+                            </table>
+                          </div>
+
+                          <p class="font-semibold mt-5">Delivery Details</p>
+
+                          <div class="overflow-x-scroll md:overflow-hidden">
+                            <table class="table-auto text-xs md:text-sm profile-table w-[100%] md:w-full mt-3">
+                              <thead>
+                                <tr>
+                                  <th>Seller Name</th>
+                                  <th>Buyer Name</th>
+                                  <th>Delivery Location</th>
+                                  <th>Payment Method</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+
+                                <tr class="bg-white rounded-md">
+                                  <td><div class="pl-2">Md. Raju</div></td>
+                                  <td>Salim Khan</td>
+                                  <td>Kajla Rajshahi</td>
+                                  <td class="font-semibold text-primaryColor">Cash On Delivery</td>
+                                </tr>
+
+                              </tbody>
+                            </table>
+                          </div>
+
+                          <div class="flex gap-3 mt-5">
+                            <button class="primary-btn bg-green-500">Accept</button>
+                            <button class="primary-btn bg-red-500">Reject</button>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
                     <div class="w-[1px] h-[20px] bg-gray-300"></div>
-                    <button><i class="fa-solid fa-trash-can text-red-500"></i></button>
+                    <button><i class="fa-solid fa-trash-can text-red-500 text-xs"></i></button>
                   </div></td>
                 </tr>
 
@@ -292,8 +723,10 @@
           </div>
 
         </div>
+        
       </div>
 
+      <!-- Balance Details -->
       <div class="px-5 xl:px-10 my-5 xl:w-fit">
         <p class="font-semibold">Balance Details</p>
 
